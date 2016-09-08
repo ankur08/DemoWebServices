@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "customCell.h"
+#import "DetailViewController.h"
+@interface ViewController : UIViewController <UITableViewDataSource , UITableViewDelegate>
 
-@interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *tableview;
+@property (weak ,nonatomic)NSString *strName;
+@property (weak ,nonatomic)NSString *strAddress;
+@property (weak ,nonatomic)NSString *strCity;
+@property (weak ,nonatomic)NSString *strZip;
 
 
 @end
